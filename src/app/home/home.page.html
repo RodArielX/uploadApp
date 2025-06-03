@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Subir archivo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <input type="file" (change)="onFileChange($event)" />
+  <ion-button expand="block" (click)="uploadFile()">Subir</ion-button>
+  <p>{{ uploadMessage }}</p>
+</ion-content>
+
